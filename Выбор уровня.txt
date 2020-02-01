@@ -1,0 +1,39 @@
+extends CanvasLayer
+
+func _ready():
+	$LinkButton1.connect("pressed", self, "btn_1")
+	$LinkButton2.connect("pressed", self, "btn_back")
+	$LinkButton3.connect("pressed", self, "btn_2")
+	$LinkButton4.connect("pressed", self, "btn_3")
+	$LinkButton5.connect("pressed", self, "btn_4")
+	$LinkButton6.connect("pressed", self, "btn_5")
+	$LinkButton7.connect("pressed", self, "btn_6")
+	$LinkButton8.connect("pressed", self, "btn_7")
+	$LinkButton9.connect("pressed", self, "btn_8")
+	
+func btn_1():
+	get_tree().change_scene("res://Lev1.tscn")
+
+func btn_2():
+	get_tree().change_scene("res://Lev2.tscn")
+	
+func btn_3():
+	get_tree().change_scene("res://Lev3.tscn")
+	
+func btn_4():
+	get_tree().change_scene("res://Lev4.tscn")
+	
+func btn_5():
+	get_tree().change_scene("res://Lev5.tscn")
+	
+func btn_6():
+	get_tree().change_scene("res://Lev6.tscn")
+	
+func btn_7():
+	get_tree().change_scene("res://lev7.tscn")
+	
+func btn_8():
+	get_tree().change_scene("res://Lev8.tscn")
+
+func btn_back():
+	get_tree().change_scene("res://Chapter.tscn")

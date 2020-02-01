@@ -1,0 +1,13 @@
+extends CanvasLayer
+
+
+func _ready():
+	$LinkButton1.connect("pressed", self, "btn_play")
+	$LinkButton2.connect("pressed", self, "btn_exit")
+	
+	
+func btn_play():
+	get_tree().change_scene("res://Chapter.tscn")
+	
+func btn_exit():
+	get_tree().quit()
